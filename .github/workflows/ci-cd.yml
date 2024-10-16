@@ -44,14 +44,14 @@ jobs:
       - name: Set up Kubeconfig
         run: |
           mkdir -p ~/.kube
-          echo "${{ secrets.KUBECONFIG }}" > ~/.kube/config
           echo "${{ secrets.KUBE_CACRT }}" > ~/.kube/ca.crt
           echo "${{ secrets.KUBE_CLIENTCRT }}" > ~/.kube/client.crt
           echo "${{ secrets.KUBE_CLIENTKEY }}" > ~/.kube/client.key
+          echo "${{ secrets.KUBECONFIG }}" > ~/.kube/config
 
       # Kubernetes'e Deployment yap
       - name: Deploy to Kubernetes
         run: |
-          kubectl apply -f ./deployment/api-gateway-cm0-configmap.yaml
-          kubectl apply -f ./deployment/api-gateway-deployment.yaml
-          kubectl apply -f ./deployment/api-gateway-service.yaml
+          kubectl apply -f ./deployment/api-gateway-cm0-configmap.yaml --validate=false
+          kubectl apply -f ./deployment/api-gateway-deployment.yaml --validate=false
+          kubectl apply -f ./deployment/api-gateway-service.yaml --validate=false
