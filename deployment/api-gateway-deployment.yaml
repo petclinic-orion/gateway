@@ -26,7 +26,7 @@ spec:
         - env:
             - name: SPRING_CONFIG_LOCATION
               value: /var/opt/application.yml
-          image: api-gateway
+          image: mustafadocker1/gateway:staging
           name: api-gateway
           ports:
             - containerPort: 8080
