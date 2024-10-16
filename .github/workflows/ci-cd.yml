@@ -30,7 +30,7 @@ jobs:
         with:
           context: .
           push: true
-          tags: orion/gateway:staging
+          tags: mustafadocker1/gateway:staging
 
   deploy:
     runs-on: ubuntu-latest
