@@ -52,6 +52,6 @@ jobs:
       # Kubernetes'e Deployment yap
       - name: Deploy to Kubernetes
         run: |
-          kubectl apply -f ./deployment/api-gateway-cm0-configmap.yaml --validate=false
-          kubectl apply -f ./deployment/api-gateway-deployment.yaml --validate=false
-          kubectl apply -f ./deployment/api-gateway-service.yaml --validate=false
+          kubectl apply -f ./deployment/api-gateway-cm0-configmap.yaml
+          kubectl apply -f ./deployment/api-gateway-deployment.yaml
+          kubectl apply -f ./deployment/api-gateway-service.yaml
