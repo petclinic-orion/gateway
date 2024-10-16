@@ -45,6 +45,9 @@ jobs:
         run: |
           mkdir -p ~/.kube
           echo "${{ secrets.KUBECONFIG }}" > ~/.kube/config
+          echo "${{ secrets.KUBE_CACRT }}" > ~/.kube/ca.crt
+          echo "${{ secrets.KUBE_CLIENTCRT }}" > ~/.kube/client.crt
+          echo "${{ secrets.KUBE_CLIENTKEY }}" > ~/.kube/client.key
 
       # Kubernetes'e Deployment yap
       - name: Deploy to Kubernetes
