@@ -3,10 +3,10 @@ related design docs https://drive.google.com/file/d/1_25R5sdOGWQX6NPO-DNAWW4kCqX
 
 ##  Prerequisites 
 ### Installations 
-https://minikube.sigs.k8s.io/docs/start/?arch=%2Fwindows%2Fx86-64%2Fstable%2F.exe+download
-https://ngrok.com/download
-https://k8slens.dev/download
-https://kompose.io/installation/
+* https://minikube.sigs.k8s.io/docs/start/?arch=%2Fwindows%2Fx86-64%2Fstable%2F.exe+download
+* https://ngrok.com/download
+* https://k8slens.dev/download
+* https://kompose.io/installation/
 
 ## Other Setup 
 * Create account on https://hub.docker.com/ 
