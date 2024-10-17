@@ -74,6 +74,9 @@ users:
 
 ##  Deployment 
 * Make changes on api-gateway repo on staging branch since it is defined on ci-cd.yml and push the changes you will see github actions running for this push 
-* 
+* Monitor the deployment on actions page 
+  * ![img.png](doc/img-actions-monitor.png)
+* Open kube lens app to monitor kubernetes cluster 
+  * ![img.png](doc/img-kube-lens-monitor.png)
 
   
