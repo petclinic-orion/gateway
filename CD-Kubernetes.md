@@ -10,7 +10,8 @@ related design docs https://drive.google.com/file/d/1_25R5sdOGWQX6NPO-DNAWW4kCqX
 
 ## Other Setup 
 * Create account on https://hub.docker.com/ 
-* Set kubectl cli https://minikube.sigs.k8s.io/docs/handbook/kubectl/ 
+* Set kubectl cli https://minikube.sigs.k8s.io/docs/handbook/kubectl/
+* Register to ngrok
 
 
 ##  Set Up 
@@ -19,7 +20,7 @@ related design docs https://drive.google.com/file/d/1_25R5sdOGWQX6NPO-DNAWW4kCqX
 * Copy api-gateway related manifests under deployment  in this repo 
 * add related kubectl commands to .github/workflows/ci-cd.yml 
 * Run `minikube start`
-* Generate kube config for pipeline run  `kube config view --raw` and copy it somewhere else to modify
+* Generate kube config for pipeline run  `kubectl config view --raw` and copy it somewhere else to modify
   * Get kubernetes url for pipeline config 
     * ![img.png](doc/img.png)
   * Get the port (In my case 51938 ) run `ngrok tcp 51938`
