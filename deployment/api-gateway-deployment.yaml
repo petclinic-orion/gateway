@@ -8,7 +8,7 @@ metadata:
     io.kompose.service: api-gateway
   name: api-gateway
 spec:
-  replicas: 2
+  replicas: 3
   selector:
     matchLabels:
       io.kompose.service: api-gateway
